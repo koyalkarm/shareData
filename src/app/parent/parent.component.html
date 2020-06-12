@@ -1,0 +1,6 @@
+<p>parent works!</p>
+<app-child [Message]="Message"></app-child>
+
+<app-child (messageEvent)="receiveMessage($event)"></app-child>
+<h1>Message from Child : {{msg}}</h1>
+<h1>Message from Service : {{serviceMsg}}</h1>
